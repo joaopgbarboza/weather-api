@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+   /* background-image: url("./weathericons/nick-nice-qXYQzOTeC5E-unsplash.jpg");
+    background-size:fill;
+    background-repeat: no-repeat;*/
+}
+
+#container-bg{
+    background: linear-gradient(135deg, rgb(13, 200, 252, 0.4), rgba(0, 72, 166, 0.2));
+
+    box-shadow: 0 4px 30px rgba(15, 11, 153, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 90%;
+    margin: 60px auto 0;
+    align-items: center;
+    max-width: 500px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 30px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+#title{
+    position: relative;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#title h1 {
+    font-size: 3rem;
+    color: #f0f0f0;
+}
+
+#getWeather{
+    margin-top: 15px;
+}
+
+.temp{
+    padding: 0;
+    font-size:3.5rem;
+    color: #f0f0f0;
+}
+
+.city{
+    font-size: 2rem;
+    color: #cdcdcd;
+    font-weight: 200;
+}
+.info{
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #f0f0f0;
+}
+.wind{
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #f0f0f0;
+}
+
+
+.weatherIcon {
+    width: 200px;
+}
+
+.btn {
+    padding: .5rem;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background: linear-gradient(180deg, #f0f0f0, #c6c6c6);
+}
+
+#getWeather{
+    border-radius: 10px;
+    padding: .5rem;
+    border: 0;
+    outline: 0;
+}
+
+::selection{
+    background-color: pink;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+    color: #f0f0f0;
+}
+
+.details img {
+    filter: invert(100%);
+}
+
+.humidity, .wind {
+    font-size: 1.3rem;
+}
