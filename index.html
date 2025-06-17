@@ -6,7 +6,7 @@
     <title>Weather API</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="./fetchweather.js"></script>
+
 </head>
 <body>
     <div id="container-bg">
@@ -16,32 +16,32 @@
         </header>
         <main id="app-content">
             <input id="getWeather" type="text" placeholder="Insert the city name" spellcheck="false">
-            <button class="btn" onclick="fetchWeather()">Check Weather</button><br>
+            <button class="btn">Check Weather</button><br>
             <div class="weather">
-                <img id="weatherIcon" class="weatherIcon" src="./weathericons/Sun.png" alt="">
-                <h3 id="weatherInfo" class="info">condition</h3>
-                <h1 id="weatherTemp" class="temp">Temp</h1>
-                <h3 id="cityName" class="city">City</h3>
+                <img id="weatherIcon" class="weatherIcon" src="" alt="">
+                <h3 id="weatherInfo" class="info"></h3>
+                <h1 id="weatherTemp" class="temp"></h1>
+                <h3 id="cityName" class="city"></h3>
                 <div class="details"> 
                     <div class="col">
                         <img src="./weathericons/humidity.png" alt="">
                         <div>
                             <p>Humidity</p>
-                            <p id="humidityInfo" class="humidity">0</p>
+                            <p id="humidityInfo" class="humidity"></p>
                         </div>
                     </div>
                     <div class="col">
                         <img src="./weathericons/windy.png" alt="">
                         <div>
                             <p>Wind Speed</p>
-                            <p id="windInfo" class="wind">0</p>
+                            <p id="windInfo" class="wind"></p>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-    
+    <script src="./fetchweather.js"></script>
 
 </body>
 </html>

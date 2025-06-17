@@ -1,3 +1,5 @@
+$("button").click(fetchWeather);
+
 async function fetchWeather(){
     try {
         const getWeather = $("#getWeather").val();
@@ -18,6 +20,10 @@ async function fetchWeather(){
         $("#cityName").text(cityName);
         $("#humidityInfo").text(humidityInfo);
         $("#windInfo").text(windInfo);
+
+        
+                
+        
 
         /*if(weatherInfo == "Clear"){
             weatherIcon.attr("src", "./weathericons/Sun.png");
@@ -58,3 +64,7 @@ async function fetchWeather(){
 
 
 }
+
+$(document).ready(function() {
+    $("button").click(fetchWeather);
+});
