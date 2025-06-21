@@ -82,6 +82,7 @@ body{
     border-radius: 10px;
     padding: .5rem;
     border: 0;
+    outline: 0;
 }
 
 ::selection{
